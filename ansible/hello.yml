@@ -1,5 +1,5 @@
 ---
-- hosts: '{{ host }}'
+- hosts: all
   tasks:
     - name: Print message
       debug:
