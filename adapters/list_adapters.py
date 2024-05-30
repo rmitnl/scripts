@@ -6,10 +6,11 @@
 import requests, json
 
 output = "["
-# get any projects that are in the root adapter group
-response = requests.get("https://gitlab.com/api/v4/groups/4836968/projects")
-for project in response.json():
-    output += "{\"name\":\""+project['path']+"\",\"category\":\""+project['namespace'].get('path')+"\"},"
+# commented out 05/30/24 - no longer required due to reordering of adapters
+#get any projects that are in the root adapter group
+#response = requests.get("https://gitlab.com/api/v4/groups/4836968/projects")
+#for project in response.json():
+#    output += "{\"name\":\""+project['path']+"\",\"category\":\""+project['namespace'].get('path')+"\"},"
 
 # get a list of the subgroups under the adapter group
 response = requests.get("https://gitlab.com/api/v4/groups/4836968/subgroups")
