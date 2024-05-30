@@ -12,5 +12,5 @@ for i in sys.argv[1:]:
         out += '"' + i + "\","
         args.append(i) 
 out = out[:-1] + "]}"
-#print(out)
-print(args)
+print(out)
+#print(args)
