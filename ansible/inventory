@@ -1,12 +1,4 @@
-ungrouped:
-  hosts:
-    mail.example.com:
 webservers:
   hosts:
-    foo.example.com:
-    bar.example.com:
-dbservers:
-  hosts:
-    one.example.com:
-    two.example.com:
-    three.example.com:
+    www1.example.com:
+    www2.example.com:
