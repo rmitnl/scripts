@@ -1,7 +1,10 @@
 import sys
 if len(sys.argv) == 1:
-    print("no args")
+    print('{"args":[]}')
     sys.exit(1)
+out='{"args":['
 for i in sys.argv[1:]:
-    print(i)
-
+    if i != "--arg":
+        out += '"' + i + "\","
+out = out[:-1] + "]}"
+print(out)
