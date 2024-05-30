@@ -1,2 +1,2 @@
-f = open("file.txt", "rt")
+f = open("./file.txt", "rt")
 print(f.read())
