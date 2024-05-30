@@ -2,5 +2,5 @@ f = open("file.txt", "wt")
 f.write("hello world")
 f.close()
 
-f = open("file.txt", "rt")
+f = open("/tmp/file.txt", "rt")
 print(f.read())
