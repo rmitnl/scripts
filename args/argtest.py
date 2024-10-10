@@ -4,7 +4,7 @@ if len(sys.argv) == 1:
     print('{"args":[]}')
     sys.exit(1)
 
-print(sys.argv[])
+print(sys.argv[1:])
 
 # some args given
 args = []
