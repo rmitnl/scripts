@@ -4,6 +4,8 @@ if len(sys.argv) == 1:
     print('{"args":[]}')
     sys.exit(1)
 
+print(sys.argv[])
+
 # some args given
 args = []
 out='{"args":['
@@ -13,4 +15,3 @@ for i in sys.argv[1:]:
         args.append(i) 
 out = out[:-1] + "]}"
 print(out)
-#print(args)
