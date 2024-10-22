@@ -1,1 +1,1 @@
-print("Hello Kristen! way to GSD!")
+print("Hello Kristen!")
